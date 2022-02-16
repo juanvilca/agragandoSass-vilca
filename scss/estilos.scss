@@ -1,5 +1,7 @@
-@import "header";
-@import "footer";
+@import "base/variables";
+@import "components/header";
+@import "components/footer";
+@import "base/operaciones";
 
 $color-principal: #ffffff;
 *{

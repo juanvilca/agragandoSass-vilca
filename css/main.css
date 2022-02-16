@@ -44,6 +44,9 @@ footer .footerHome .copyright {
   text-align: center;
   margin: 5px; }
 
+header {
+  width: 1280px; }
+
 * {
   margin: 0;
   padding: 0; }
