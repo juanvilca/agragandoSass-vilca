@@ -1,3 +1,49 @@
+header .contenedorLogo {
+  grid-area: header;
+  padding: 8px; }
+
+header .contenedorLogo .logo {
+  text-align: center;
+  color: #000000; }
+
+header .contenedorLogo .sub {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center; }
+
+footer .footerHome {
+  display: flex;
+  justify-content: center;
+  grid-area: footer; }
+
+footer .footerHome .redesIconos {
+  display: flex;
+  padding: 25px;
+  margin-top: 8px;
+  justify-content: center;
+  justify-content: space-around; }
+
+footer .footerHome .redesIconos a {
+  background: #181815;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 58px;
+  cursor: pointer;
+  transition: 0.5s all; }
+
+footer .footerHome .redesIconos a:hover {
+  transform: scale(1.2); }
+
+footer .footerHome .copyright {
+  text-align: center;
+  margin: 5px; }
+
 * {
   margin: 0;
   padding: 0; }

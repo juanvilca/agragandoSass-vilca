@@ -1,0 +1,13 @@
+header{
+.contenedorLogo {
+    grid-area: header;
+    padding: 8px; }
+    .contenedorLogo .logo {
+      text-align: center;
+      color: #000000; }
+        .contenedorLogo .sub {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        text-align: center; }
+}
