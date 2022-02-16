@@ -71,7 +71,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: italic;
-    text-align: center; }
+    text-align: center;
+    color: black; }
 
 /*navbar*/
 nav {

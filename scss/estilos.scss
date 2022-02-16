@@ -2,8 +2,8 @@
 @import "components/header";
 @import "components/footer";
 @import "base/operaciones";
+@import "base/listas";
 
-$color-principal: #ffffff;
 *{
     margin: 0;
     padding: 0;
@@ -26,13 +26,14 @@ body{
     padding: 8px;
     .logo{
         text-align: center;
-        color: black;
+        color: nth($colores,4);
     }
     .sub{
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-style: italic;
         text-align: center;
+        color: nth($colores,4);
     }
 }
 
