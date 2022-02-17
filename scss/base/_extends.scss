@@ -1,0 +1,9 @@
+/* extends */
+
+%extendTest {
+    background-color: #f6f3eb;
+}
+
+footer{
+    @extend %extendTest;
+}
