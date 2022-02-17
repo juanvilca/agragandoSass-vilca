@@ -45,7 +45,13 @@ footer .footerHome .copyright {
   margin: 5px; }
 
 header {
-  width: 1280px; }
+  width: 1380px; }
+
+ul li a {
+  color: #000000; }
+
+.navBar {
+  background-color: #f6f3eb; }
 
 * {
   margin: 0;
@@ -81,16 +87,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f6f3eb;
     height: 100%; }
   nav ul {
-    list-style: none;
-    background-color: #818067; }
+    list-style: none; }
   nav ul li a {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: black;
     padding: 10px;
     border-radius: 5px;
     text-transform: uppercase; }

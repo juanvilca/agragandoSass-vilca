@@ -1,0 +1,11 @@
+$navPages: (
+    color-navPages: #000000,
+    bg-navPages: #f6f3eb,
+);
+
+ul li a{
+    color: map-get($map: $navPages, $key: color-navPages);
+}
+.navBar{
+    background-color: map-get($map: $navPages, $key:bg-navPages);
+}

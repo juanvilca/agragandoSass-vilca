@@ -3,6 +3,8 @@
 @import "components/footer";
 @import "base/operaciones";
 @import "base/listas";
+@import "base/maps";
+@import "base/extends";
 
 *{
     margin: 0;
@@ -44,18 +46,15 @@ nav{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: $color-secundario;
         height: 100%;
     }
     ul{
         list-style: none;
-        background-color:rgb(129, 128, 103); ;
     }
     ul li a{
         display: block;
         text-align: center;
         text-decoration: none;
-        color: black;
         padding: 10px;
         border-radius: 5px;
         text-transform: uppercase;
