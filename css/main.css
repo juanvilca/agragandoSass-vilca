@@ -57,6 +57,11 @@ ul li a {
 footer {
   background-color: #f6f3eb; }
 
+/* mixin */
+.descripcionTexto {
+  text-align: center;
+  padding-bottom: 5px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -149,8 +154,6 @@ main {
     width: 590px;
     height: 330px; }
   main .descripcionTexto {
-    text-align: center;
-    padding-bottom: 5px;
     font-style: italic;
     font-size: 13px; }
 

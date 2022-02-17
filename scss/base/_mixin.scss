@@ -1,0 +1,10 @@
+/* mixin */ 
+
+@mixin descripcionTexto {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.descripcionTexto{
+    @include descripcionTexto;
+}

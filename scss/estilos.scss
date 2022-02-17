@@ -5,6 +5,7 @@
 @import "base/listas";
 @import "base/maps";
 @import "base/extends";
+@import "base/mixin";
 
 *{
     margin: 0;
@@ -117,8 +118,6 @@ main{
         height: 330px;
     }
     .descripcionTexto{
-        text-align: center;
-        padding-bottom: 5px;
         font-style: italic;
         font-size: 13px;
     }
