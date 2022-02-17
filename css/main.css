@@ -62,6 +62,11 @@ footer {
   text-align: center;
   padding-bottom: 5px; }
 
+/* mixin */
+.descripcionTexto {
+  text-align: center;
+  padding-bottom: 5px; }
+
 * {
   margin: 0;
   padding: 0; }
