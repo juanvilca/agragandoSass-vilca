@@ -1,9 +1,11 @@
 header{
 .contenedorLogo {
     grid-area: header;
-    padding: 8px; }
+    padding: 1px; }
     .contenedorLogo .logo {
       text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 220px;
       color: #000000; }
         .contenedorLogo .sub {
         font-family: 'Roboto', sans-serif;

@@ -1,9 +1,11 @@
 header .contenedorLogo {
   grid-area: header;
-  padding: 8px; }
+  padding: 1px; }
 
 header .contenedorLogo .logo {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 220px;
   color: #000000; }
 
 header .contenedorLogo .sub {
@@ -45,7 +47,7 @@ footer .footerHome .copyright {
   margin: 5px; }
 
 header {
-  width: 1380px; }
+  width: 1280px; }
 
 ul li a {
   color: #000000; }
@@ -71,7 +73,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+  grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
   grid-template-rows: 10% 9% 60% 20%;
   height: 100vh; }

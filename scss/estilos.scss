@@ -16,8 +16,9 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-areas:"header header"
+    grid-template-areas:
                         "nav nav"
+                        "header header"
                         "main main"
                         "footer footer";
     grid-template-columns: 100%;
