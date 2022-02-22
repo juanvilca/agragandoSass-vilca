@@ -69,7 +69,7 @@ footer {
   display: grid;
   grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 10% 100% 20%;
+  grid-template-rows: 10% 30% 105% 20%;
   height: 100vh; }
 
 header .contenedorProductos {
@@ -83,10 +83,8 @@ header .contenedorProductos .logoProductos {
   color: #000000; }
 
 main .container {
-  display: grid;
-  grid-area: main;
   width: 100%;
-  padding: 10%; }
+  padding: 15%; }
 
 * {
   margin: 0;
