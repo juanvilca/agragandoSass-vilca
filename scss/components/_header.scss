@@ -1,8 +1,7 @@
 header{
 .contenedorLogo {
     grid-area: header;
-    padding: 1px; 
-  }
+    padding: 1px; }
     .contenedorLogo .logo {
       text-align: center;
       font-style: normal;
@@ -14,5 +13,6 @@ header{
         font-size: 15px;
         font-style: italic;
         text-align: center; 
+        margin-top: 13px;
       }
 }

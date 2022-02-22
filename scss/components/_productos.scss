@@ -1,0 +1,31 @@
+.gridProductos{
+    display: grid;
+    grid-template-areas: "nav nav"
+                         "header header"
+                         "main main"
+                         "footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 100% 20%;
+    height: 100vh;
+}
+header{
+    .contenedorProductos {
+        grid-area: header;
+        padding: 1px; }
+        .contenedorProductos .logoProductos {
+          text-align: center;
+          font-family: serif;
+          font-size: 150px;
+          color: #000000; 
+          }
+    }
+
+main{
+    .container{
+        display: grid;
+        grid-area: main;
+        width: 100%;
+        padding: 10%;
+    }
+}
+
