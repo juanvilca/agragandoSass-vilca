@@ -4,8 +4,8 @@ header .contenedorLogo {
 
 header .contenedorLogo .logo {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 220px;
+  font-style: normal;
+  font-size: 210px;
   color: #000000; }
 
 header .contenedorLogo .sub {
@@ -75,7 +75,7 @@ body {
   display: grid;
   grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 9% 60% 20%;
+  grid-template-rows: 10% 9% 91% 20%;
   height: 100vh; }
 
 .contenedorLogo {
@@ -153,7 +153,7 @@ main {
     align-self: flex-end; }
   main .mainImage {
     margin-left: 12%;
-    width: 590px;
+    width: 595px;
     height: 330px; }
   main .descripcionTexto {
     font-style: italic;
