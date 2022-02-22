@@ -5,7 +5,7 @@ header .contenedorLogo {
 header .contenedorLogo .logo {
   text-align: center;
   font-style: normal;
-  font-size: 210px;
+  font-size: 150px;
   color: #000000; }
 
 header .contenedorLogo .sub {
@@ -75,7 +75,7 @@ body {
   display: grid;
   grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 9% 91% 20%;
+  grid-template-rows: 10% 9% 75% 20%;
   height: 100vh; }
 
 .contenedorLogo {
@@ -157,7 +157,14 @@ main {
     height: 330px; }
   main .descripcionTexto {
     font-style: italic;
-    font-size: 13px; }
+    font-size: 15px; }
+  main a {
+    text-decoration: none; }
+  main .titleBackround {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    font-size: 20px; }
 
 /*footer*/
 .footerHome {

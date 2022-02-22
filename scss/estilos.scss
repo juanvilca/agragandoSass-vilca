@@ -22,7 +22,7 @@ body{
                         "main main"
                         "footer footer";
     grid-template-columns: 100%;
-    grid-template-rows: 10% 9% 91% 20%;
+    grid-template-rows: 10% 9% 75% 20%;
     height: 100vh;
 }
 .contenedorLogo{
@@ -120,7 +120,16 @@ main{
     }
     .descripcionTexto{
         font-style: italic;
-        font-size: 13px;
+        font-size: 15px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .titleBackround{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        font-size: 20px;
     }
 }
 
