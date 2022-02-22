@@ -8,3 +8,26 @@
 .descripcionTexto{
     @include descripcionTexto;
 }
+
+/* media queries */
+
+@mixin media-up ($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+header{
+    @include media-up(lg){
+        width: 100%;
+    }
+}
+
+main{
+    @include media-up(lg){
+        grid-template-columns: 85% 100%;
+    }
+}
+
+
+

@@ -149,6 +149,9 @@ main{
         line-height: 58px;
         cursor: pointer;
         transition: 0.5s all;
+            @include media-up(lg){
+                margin: 10px;
+            }
     }
     .redesIconos a:hover{
         transform: scale(1.2);
@@ -158,3 +161,5 @@ main{
         margin: 5px;
     }
 }
+
+

@@ -56,6 +56,7 @@ ul li a {
 .navBar {
   background-color: #f6f3eb; }
 
+/* media queries */
 /* extends */
 footer {
   background-color: #f6f3eb; }
@@ -65,12 +66,24 @@ footer {
   text-align: center;
   padding-bottom: 5px; }
 
+/* media queries */
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%; } }
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: 85% 100%; } }
+
 .gridProductos {
   display: grid;
   grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
   grid-template-rows: 10% 30% 105% 20%;
   height: 100vh; }
+  @media screen and (min-width: 1024px) {
+    .gridProductos {
+      grid-template-rows: 10% 30% 123% 20%; } }
 
 header .contenedorProductos {
   grid-area: header;
@@ -101,6 +114,9 @@ header .logoNosotros {
     text-align: center;
     font-size: 150px;
     padding-left: 17%; }
+    @media screen and (min-width: 1024px) {
+      header .logoNosotros .logo {
+        padding-left: 10%; } }
   header .logoNosotros .sub {
     position: absolute;
     text-align: center;
@@ -114,6 +130,10 @@ header .logoNosotros {
     font-size: 15px;
     padding: 2.5% 10% 0% 9%;
     color: #2b2b2b; }
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%; } }
 
 main {
   display: grid;
@@ -248,6 +268,9 @@ main {
     line-height: 58px;
     cursor: pointer;
     transition: 0.5s all; }
+    @media screen and (min-width: 1024px) {
+      .footerHome .redesIconos a {
+        margin: 10px; } }
   .footerHome .redesIconos a:hover {
     transform: scale(1.2); }
   .footerHome .copyright {

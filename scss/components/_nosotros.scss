@@ -21,6 +21,9 @@ header{
                 text-align: center;
                 font-size: 150px;
                 padding-left: 17%;
+                    @include media-up(lg){
+                        padding-left: 10%;
+                    }
             }
             .sub{
                 position: absolute;
@@ -37,6 +40,9 @@ header{
                 padding: 2.5% 10% 0% 9%;
                 color: #2b2b2b;
             }
+        }
+        @include media-up(lg){
+            width: 100%;
         }
     }
     main{
