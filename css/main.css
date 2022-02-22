@@ -86,6 +86,50 @@ main .container {
   width: 100%;
   padding: 15%; }
 
+.gridNosotros {
+  display: grid;
+  grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 45% 100% 20%;
+  height: 100vh; }
+
+header .logoNosotros {
+  display: flex;
+  padding: 2px;
+  align-content: center; }
+  header .logoNosotros .logo {
+    text-align: center;
+    font-size: 150px;
+    padding-left: 17%; }
+  header .logoNosotros .sub {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    padding: 15% 0% 0% 46%; }
+  header .logoNosotros .titleBackround {
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    padding: 2.5% 10% 0% 9%;
+    color: #2b2b2b; }
+
+main {
+  display: grid;
+  grid-area: main;
+  margin: 0 auto; }
+  main .nosotrosTextWrap {
+    justify-content: space-between; }
+    main .nosotrosTextWrap .nosotrosText {
+      text-align: center;
+      font-size: 45px;
+      padding-top: 13%; }
+  main .nosotrosImg {
+    float: left;
+    width: 490px;
+    height: 670px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -104,14 +148,12 @@ body {
   grid-area: header;
   padding: 8px; }
   .contenedorLogo .logo {
-    text-align: center;
-    color: black; }
+    text-align: center; }
   .contenedorLogo .sub {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: italic;
-    text-align: center;
-    color: black; }
+    text-align: center; }
 
 /*navbar*/
 nav {
@@ -182,11 +224,6 @@ main {
   main .descripcionTexto {
     font-style: italic;
     font-size: 15px; }
-  main .titleBackround {
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-    font-size: 17px; }
 
 /*footer*/
 .footerHome {

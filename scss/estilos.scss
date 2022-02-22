@@ -6,6 +6,7 @@
 @import "base/extends";
 @import "base/mixin";
 @import "components/productos";
+@import "components/nosotros";
 
 *{
     margin: 0;
@@ -30,14 +31,12 @@ body{
     padding: 8px;
     .logo{
         text-align: center;
-        color: nth($colores,4);
     }
     .sub{
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-style: italic;
         text-align: center;
-        color: nth($colores,4);
     }
 }
 
@@ -124,12 +123,6 @@ main{
         font-style: italic;
         font-size: 15px;
     }
-    .titleBackround{
-        display: grid;
-        grid-template-columns: auto auto;
-        text-align: center;
-        font-size: 17px;
-    }
 }
 
 /*footer*/
@@ -165,6 +158,3 @@ main{
         margin: 5px;
     }
 }
-
-
- 

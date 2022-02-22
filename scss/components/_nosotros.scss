@@ -1,0 +1,60 @@
+
+.gridNosotros{
+    display: grid;
+    grid-template-areas:
+                        "nav nav"
+                        "header header"
+                        "main main"
+                        "footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 45% 100% 20%;
+    height: 100vh;
+}
+
+header{
+    .logoNosotros{
+        display: flex;
+        padding: 2px;
+        align-content: center;
+
+            .logo{
+                text-align: center;
+                font-size: 150px;
+                padding-left: 17%;
+            }
+            .sub{
+                position: absolute;
+                text-align: center;
+                font-size: 18px;
+                padding: 15% 0% 0% 46%;
+            }
+            .titleBackround{
+                position: absolute;
+                text-align: center;
+                font-family: sans-serif;
+                font-style: italic;
+                font-size: 15px;
+                padding: 2.5% 10% 0% 9%;
+                color: #2b2b2b;
+            }
+        }
+    }
+    main{
+        display: grid;
+        grid-area: main;
+        margin: 0 auto;
+        .nosotrosTextWrap{
+            justify-content: space-between;
+            .nosotrosText{
+                text-align: center;
+                font-size: 45px;
+                padding-top: 13%;
+            }
+        }
+        .nosotrosImg{
+            float: left;
+            width: 490px;
+            height: 670px;
+            
+        }
+    }
