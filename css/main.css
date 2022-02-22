@@ -15,38 +15,6 @@ header .contenedorLogo .sub {
   text-align: center;
   margin-top: 13px; }
 
-footer .footerHome {
-  display: flex;
-  justify-content: center;
-  grid-area: footer; }
-
-footer .footerHome .redesIconos {
-  display: flex;
-  padding: 25px;
-  margin-top: 8px;
-  justify-content: center;
-  justify-content: space-around; }
-
-footer .footerHome .redesIconos a {
-  background: #181815;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 28px;
-  color: white;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 58px;
-  cursor: pointer;
-  transition: 0.5s all; }
-
-footer .footerHome .redesIconos a:hover {
-  transform: scale(1.2); }
-
-footer .footerHome .copyright {
-  text-align: center;
-  margin: 5px; }
-
 header {
   width: 1280px; }
 
@@ -54,12 +22,12 @@ ul li a {
   color: #000000; }
 
 .navBar {
-  background-color: #f6f3eb; }
+  background-color: #f5f0e2; }
 
 /* media queries */
 /* extends */
 footer {
-  background-color: #f6f3eb; }
+  background-color: #2b2b2b; }
 
 /* mixin */
 .descripcionTexto {
@@ -82,18 +50,23 @@ footer {
   grid-template-rows: 10% 30% 105% 20%;
   height: 100vh; }
   @media screen and (min-width: 1024px) {
-    .gridProductos {
+    .gridProductos .gridProductos {
       grid-template-rows: 10% 30% 123% 20%; } }
+  @media screen and (min-width: 768px) {
+    .gridProductos .gridProductos {
+      grid-template-rows: 10% 10% 60% 20%;
+      width: 50vh; } }
 
-header .contenedorProductos {
-  grid-area: header;
-  padding: 1px; }
-
-header .contenedorProductos .logoProductos {
-  text-align: center;
-  font-family: serif;
-  font-size: 150px;
-  color: #000000; }
+header {
+  width: 68vh; }
+  header .contenedorProductos {
+    grid-area: header;
+    padding: 1px; }
+  header .contenedorProductos .logoProductos {
+    text-align: center;
+    font-family: serif;
+    font-size: 150px;
+    color: #000000; }
 
 main .container {
   width: 100%;
@@ -105,6 +78,9 @@ main .container {
   grid-template-columns: 100%;
   grid-template-rows: 10% 45% 100% 20%;
   height: 100vh; }
+  @media screen and (min-width: 1024px) {
+    .gridNosotros {
+      grid-template-rows: 10% 35% 100% 20%; } }
 
 header .logoNosotros {
   display: flex;
@@ -117,11 +93,22 @@ header .logoNosotros {
     @media screen and (min-width: 1024px) {
       header .logoNosotros .logo {
         padding-left: 10%; } }
+    @media screen and (min-width: 768px) {
+      header .logoNosotros .logo {
+        padding-top: 3%;
+        padding-left: 10%;
+        font-size: 120px; } }
   header .logoNosotros .sub {
     position: absolute;
     text-align: center;
     font-size: 18px;
     padding: 15% 0% 0% 46%; }
+    @media screen and (min-width: 1024px) {
+      header .logoNosotros .sub {
+        padding: 18% 0% 0% 46%; } }
+    @media screen and (min-width: 768px) {
+      header .logoNosotros .sub {
+        padding: 30% 0% 0% 46%; } }
   header .logoNosotros .titleBackround {
     position: absolute;
     text-align: center;
@@ -130,6 +117,9 @@ header .logoNosotros {
     font-size: 15px;
     padding: 2.5% 10% 0% 9%;
     color: #2b2b2b; }
+    @media screen and (min-width: 768px) {
+      header .logoNosotros .titleBackround {
+        padding: 1% 10% 0% 9%; } }
 
 @media screen and (min-width: 1024px) {
   header {
@@ -145,10 +135,59 @@ main {
       text-align: center;
       font-size: 45px;
       padding-top: 13%; }
+      @media screen and (min-width: 1024px) {
+        main .nosotrosTextWrap .nosotrosText {
+          font-size: 37px;
+          padding-top: 6%; } }
+      @media screen and (min-width: 768px) {
+        main .nosotrosTextWrap .nosotrosText {
+          font-size: 30px;
+          padding-top: 6%; } }
   main .nosotrosImg {
     float: left;
     width: 490px;
     height: 670px; }
+
+.gridContacto {
+  display: grid;
+  grid-template-areas: "nav " "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 35% 55% 20%;
+  height: 100vh;
+  background: #494949;
+  background: linear-gradient(0deg, #494949 0%, #f5f0e2 100%); }
+
+nav {
+  grid-area: nav; }
+  nav .navBarContacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  nav ul {
+    list-style: none; }
+  nav ul li a {
+    color: #000000;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase; }
+  nav a:hover {
+    border-bottom: 2px solid #c2a661;
+    color: #000000; }
+
+form {
+  display: grid;
+  grid-area: main;
+  justify-content: center;
+  width: 100%; }
+  form .form-outline {
+    text-align: center; }
+  form .btn {
+    height: 55%;
+    background-color: black; }
 
 * {
   margin: 0;
@@ -271,8 +310,12 @@ main {
     @media screen and (min-width: 1024px) {
       .footerHome .redesIconos a {
         margin: 10px; } }
+    @media screen and (min-width: 768px) {
+      .footerHome .redesIconos a {
+        margin: 10px; } }
   .footerHome .redesIconos a:hover {
     transform: scale(1.2); }
   .footerHome .copyright {
     text-align: center;
+    color: antiquewhite;
     margin: 5px; }

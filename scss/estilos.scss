@@ -1,12 +1,12 @@
 @import "base/variables";
 @import "components/header";
-@import "components/footer";
 @import "base/operaciones";
 @import "base/maps";
 @import "base/extends";
 @import "base/mixin";
 @import "components/productos";
 @import "components/nosotros";
+@import "components/contacto";
 
 *{
     margin: 0;
@@ -152,12 +152,16 @@ main{
             @include media-up(lg){
                 margin: 10px;
             }
+            @include media-up (md){
+                margin: 10px;
+            }
     }
     .redesIconos a:hover{
         transform: scale(1.2);
     }
     .copyright{
         text-align: center;
+        color: antiquewhite;
         margin: 5px;
     }
 }

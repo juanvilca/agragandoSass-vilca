@@ -1,0 +1,51 @@
+.gridContacto{
+    display: grid;
+    grid-template-areas:
+                        "nav "
+                        "header"
+                        "main"
+                        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 35% 55% 20%;
+    height: 100vh;
+    background: rgb(73,73,73);
+    background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(245,240,226,1) 100%);
+}
+nav{
+    grid-area: nav;
+    .navBarContacto{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li a{
+        color: #000000;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    a:hover{
+        border-bottom: 2px solid #c2a661;
+        color: #000000;
+    }
+}
+form{
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+    width: 100%;
+    .form-outline{
+        text-align: center;
+    }
+    .btn{
+        height: 55%;
+        background-color: black;
+    }
+}

@@ -7,23 +7,29 @@
     grid-template-columns: 100%;
     grid-template-rows: 10% 30% 105% 20%;
     height: 100vh;
-    
+    .gridProductos{
     @include media-up(lg){
-            grid-template-rows: 10% 30% 123% 20%;
-        }
+        grid-template-rows: 10% 30% 123% 20%;
+    }
+    @include media-up(md){
+        grid-template-rows: 10% 10% 60% 20%;
+        width: 50vh;
+    }
+}
 }
 
 header{
+    width: 68vh;
     .contenedorProductos {
         grid-area: header;
-        padding: 1px; }
+        padding: 1px; 
+    }
         .contenedorProductos .logoProductos {
           text-align: center;
           font-family: serif;
           font-size: 150px;
           color: #000000; 
           }
-    
     }
 
 main{

@@ -9,6 +9,9 @@
     grid-template-columns: 100%;
     grid-template-rows: 10% 45% 100% 20%;
     height: 100vh;
+        @include media-up(lg){
+            grid-template-rows: 10% 35% 100% 20%;
+        }
 }
 
 header{
@@ -24,12 +27,23 @@ header{
                     @include media-up(lg){
                         padding-left: 10%;
                     }
+                    @include media-up(md){
+                        padding-top: 3%;
+                        padding-left: 10%;
+                        font-size: 120px;
+                    }
             }
             .sub{
                 position: absolute;
                 text-align: center;
                 font-size: 18px;
                 padding: 15% 0% 0% 46%;
+                    @include media-up(lg){
+                        padding: 18% 0% 0% 46%;   
+                    }
+                    @include media-up(md){
+                        padding: 30% 0% 0% 46%; 
+                    }
             }
             .titleBackround{
                 position: absolute;
@@ -39,6 +53,9 @@ header{
                 font-size: 15px;
                 padding: 2.5% 10% 0% 9%;
                 color: #2b2b2b;
+                    @include media-up(md){
+                        padding: 1% 10% 0% 9%;
+                    }
             }
         }
         @include media-up(lg){
@@ -55,6 +72,14 @@ header{
                 text-align: center;
                 font-size: 45px;
                 padding-top: 13%;
+                    @include media-up (lg){
+                        font-size: 37px;
+                        padding-top: 6%;
+                    }
+                    @include media-up (md){
+                        font-size: 30px;
+                        padding-top: 6%;
+                    }
             }
         }
         .nosotrosImg{
@@ -64,3 +89,4 @@ header{
             
         }
     }
+    
