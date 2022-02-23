@@ -5,7 +5,7 @@ header .contenedorLogo {
 header .contenedorLogo .logo {
   text-align: center;
   font-style: normal;
-  font-size: 150px;
+  font-size: 143px;
   color: #000000; }
 
 header .contenedorLogo .sub {
@@ -39,9 +39,17 @@ footer {
   header {
     width: 100%; } }
 
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%; } }
+
 @media screen and (min-width: 1024px) {
   main {
     grid-template-columns: 85% 100%; } }
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 85% 90%; } }
 
 .gridProductos {
   display: grid;
@@ -268,6 +276,10 @@ main {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      main .tituloMain2 {
+        font-size: 25px;
+        margin-bottom: 5px; } }
   main .subrayado {
     width: 60px;
     height: 2px;
@@ -280,6 +292,11 @@ main {
     margin-left: 12%;
     width: 595px;
     height: 330px; }
+    @media screen and (min-width: 768px) {
+      main .mainImage {
+        margin-left: 8%;
+        width: 500px;
+        height: 300px; } }
   main .descripcionTexto {
     font-style: italic;
     font-size: 15px; }

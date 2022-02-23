@@ -103,6 +103,10 @@ main{
         text-align: center;
         font-size: 30px;
         margin-bottom: 10px;
+            @include media-up(md){
+                font-size: 25px;
+                margin-bottom: 5px;
+        }
     }
     .subrayado{
         width: 60px;
@@ -118,6 +122,11 @@ main{
         margin-left: 12%;
         width: 595px;
         height: 330px;
+            @include media-up(md){
+                margin-left: 8%;
+                width: 500px;
+                height: 300px;
+            }
     }
     .descripcionTexto{
         font-style: italic;
