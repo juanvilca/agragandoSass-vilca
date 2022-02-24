@@ -1,20 +1,3 @@
-header .contenedorLogo {
-  grid-area: header;
-  padding: 1px; }
-
-header .contenedorLogo .logo {
-  text-align: center;
-  font-style: normal;
-  font-size: 143px;
-  color: #000000; }
-
-header .contenedorLogo .sub {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-style: italic;
-  text-align: center;
-  margin-top: 13px; }
-
 header {
   width: 1280px; }
 
@@ -43,13 +26,43 @@ footer {
   header {
     width: 100%; } }
 
+@media screen and (min-width: 340px) {
+  header {
+    width: 100%; } }
+
+@media screen and (min-width: 340px) {
+  .contenedorLogo .logo {
+    font-size: 50px; } }
+
 @media screen and (min-width: 1024px) {
-  main {
-    grid-template-columns: 85% 100%; } }
+  main .mainWrap {
+    grid-template-columns: 85% 80%; } }
 
 @media screen and (min-width: 768px) {
-  main {
+  main .mainWrap {
     grid-template-columns: 85% 90%; } }
+
+@media screen and (min-width: 340px) {
+  main .mainWrap {
+    grid-template-columns: 50% 40%; } }
+
+header {
+  display: grid;
+  grid-area: header;
+  width: 100%; }
+  header .contenedorLogo {
+    padding: 1px; }
+  header .contenedorLogo .logo {
+    text-align: center;
+    font-style: normal;
+    font-size: 143px;
+    color: #000000; }
+  header .contenedorLogo .sub {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 13px; }
 
 .gridProductos {
   display: grid;
@@ -208,7 +221,7 @@ body {
   display: grid;
   grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 9% 75% 20%;
+  grid-template-rows: 10% 30% 65% 25%;
   height: 100vh; }
 
 .contenedorLogo {
@@ -264,12 +277,11 @@ nav {
 /*main*/
 main {
   grid-area: main;
-  width: 85%;
-  justify-self: center; }
+  width: 100%;
+  height: 100%; }
   main .mainWrap {
     display: grid;
-    height: 100%;
-    grid-template-columns: 25% 70%; }
+    grid-template-columns: 30% 70%; }
   main .tituloMain1 {
     align-self: center; }
   main .tituloMain2 {
@@ -280,18 +292,18 @@ main {
       main .tituloMain2 {
         font-size: 25px;
         margin-bottom: 5px; } }
+    @media screen and (min-width: 340px) {
+      main .tituloMain2 {
+        font-size: 35px; } }
   main .subrayado {
     width: 60px;
     height: 2px;
     margin: 0 auto;
     background-color: #c2a661; }
-  main .descripcionWrap {
-    margin-top: 1%;
-    align-self: flex-end; }
   main .mainImage {
-    margin-left: 12%;
-    width: 595px;
-    height: 330px; }
+    margin-left: 25%;
+    width: 600px;
+    height: 500px; }
     @media screen and (min-width: 768px) {
       main .mainImage {
         margin-left: 8%;
@@ -299,7 +311,7 @@ main {
         height: 300px; } }
   main .descripcionTexto {
     font-style: italic;
-    font-size: 15px; }
+    font-size: 13px; }
 
 /*footer*/
 .footerHome {

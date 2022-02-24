@@ -17,6 +17,7 @@
     }
 }
 
+
 header{
     @include media-up(lg){
         width: 100%;
@@ -24,14 +25,29 @@ header{
     @include media-up(md){
         width: 100%;
     }
+    @include media-up(sm){
+        width: 100%;
+    }
+}
+.contenedorLogo{
+    .logo{
+    @include media-up(sm){
+        font-size: 50px;
+        }
+    }
 }
 
 main{
-    @include media-up(lg){
-        grid-template-columns: 85% 100%;
-    }
-    @include media-up(md){
-        grid-template-columns: 85% 90%; 
+    .mainWrap{
+        @include media-up(lg){
+            grid-template-columns: 85% 80%;
+
+        }
+        @include media-up(md){
+            grid-template-columns: 85% 90%; 
+        }
+        @include media-up(sm){
+            grid-template-columns: 50% 40%;
+        }
     }
 }
-
