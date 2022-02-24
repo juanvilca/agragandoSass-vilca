@@ -4,9 +4,6 @@ header {
 ul li a {
   color: #000000; }
 
-.navBar {
-  background-color: #f5f0e2; }
-
 /* media queries */
 /* extends */
 footer {
@@ -51,11 +48,12 @@ header {
   grid-area: header;
   width: 100%; }
   header .contenedorLogo {
-    padding: 1px; }
+    display: flex;
+    padding: 2px; }
   header .contenedorLogo .logo {
     text-align: center;
     font-style: normal;
-    font-size: 143px;
+    font-size: 140px;
     color: #000000; }
   header .contenedorLogo .sub {
     font-family: 'Roboto', sans-serif;
@@ -221,41 +219,63 @@ body {
   display: grid;
   grid-template-areas: "nav nav" "header header" "main main" "footer footer";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 30% 65% 25%;
+  grid-template-rows: 15% 30% 75% 25%;
   height: 100vh; }
 
 .contenedorLogo {
   grid-area: header;
   padding: 8px; }
-  .contenedorLogo .logo {
-    text-align: center; }
-  .contenedorLogo .sub {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-style: italic;
-    text-align: center; }
 
 /*navbar*/
 nav {
-  grid-area: nav; }
-  nav .navBar {
+  display: grid;
+  grid-area: nav;
+  background-color: #f5f0e2;
+  height: 80px; }
+
+.navContainer {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center; }
+
+.navMenu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20em;
+  list-style: none; }
+
+.navItem {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  color: black; }
+
+.navLabel, .navInput {
+  display: none; }
+
+/*menu desplegable*/
+@media screen and (max-width: 700px) {
+  .navMenu {
+    background-color: black;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background-color: tomato;
+    width: 100%;
+    left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    height: 100%; }
-  nav ul {
-    list-style: none; }
-  nav ul li a {
-    color: #000000;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; }
+  .navInput:checked + .navMenu {
+    clip-path: circle(100% at center); }
+  .navLabel {
     display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    text-transform: uppercase; }
-  nav a:hover {
-    border-bottom: 2px solid #c2a661;
-    color: #000000; }
+    cursor: pointer; } }
 
 /*subMenu*/
 .subMenu {
@@ -265,12 +285,12 @@ nav {
   width: 9%; }
   .subMenu li a {
     display: block;
-    padding: 10px;
     color: #363636;
     font-size: 12px;
+    font-family: Roboto, sans-serif;
     text-decoration: none; }
 
-.navBar li:hover .subMenu {
+.navMenu li:hover .subMenu {
   display: block;
   padding: 5px; }
 
@@ -283,32 +303,24 @@ main {
     display: grid;
     grid-template-columns: 30% 70%; }
   main .tituloMain1 {
-    align-self: center; }
+    align-self: center;
+    padding-bottom: 20%; }
   main .tituloMain2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px; }
-    @media screen and (min-width: 768px) {
-      main .tituloMain2 {
-        font-size: 25px;
-        margin-bottom: 5px; } }
-    @media screen and (min-width: 340px) {
-      main .tituloMain2 {
-        font-size: 35px; } }
   main .subrayado {
     width: 60px;
     height: 2px;
     margin: 0 auto;
     background-color: #c2a661; }
   main .mainImage {
-    margin-left: 25%;
-    width: 600px;
-    height: 500px; }
-    @media screen and (min-width: 768px) {
-      main .mainImage {
-        margin-left: 8%;
-        width: 500px;
-        height: 300px; } }
+    width: 725px;
+    height: 430px; }
+  main .descripcionWrap {
+    display: grid;
+    grid-template-rows: 82% auto;
+    justify-items: center; }
   main .descripcionTexto {
     font-style: italic;
     font-size: 13px; }

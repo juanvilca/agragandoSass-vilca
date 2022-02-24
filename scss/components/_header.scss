@@ -3,12 +3,13 @@ header{
   grid-area: header;
   width: 100%;
   .contenedorLogo {
-      padding: 1px;
+      display: flex;
+      padding: 2px;
     }
       .contenedorLogo .logo {
         text-align: center;
         font-style: normal;
-        font-size: 143px;
+        font-size: 140px;
         color: #000000;
         }
           .contenedorLogo .sub {
