@@ -23,13 +23,9 @@ body{
                             "main main"
                             "footer footer";
         grid-template-columns: 100%;
-        grid-template-rows: 15% 30% 75% 25%;
+        grid-template-rows: 15% 50% 100% 25%;
         height: 100vh;
     }
-        .contenedorLogo{
-            grid-area: header;
-            padding: 8px;
-        }
 
 /*navbar*/
 nav{
@@ -41,15 +37,15 @@ nav{
         .navContainer{
             display: flex;
             height: 100%;
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
         }
             .navMenu{
                 display: grid;
                 grid-auto-flow: column;
-                gap: 20em;
+                gap: 15em;
                 list-style: none;
                 }
                 .navItem{
@@ -66,11 +62,10 @@ nav{
 @media screen and (max-width: 700px){
 
 .navMenu{
-    background-color: black;
+    background-color: rgb(49, 49, 49);
     position: fixed;
     top:80px;
     bottom: 0;
-    background-color: tomato;
     width: 100%;
     left: 0;
     display: flex;
@@ -87,8 +82,33 @@ nav{
         display: block;
         cursor: pointer;
     }
+    .navItem{
+        color: #e9e9e9;
+        text-transform: uppercase;
 
+    }
+
+    /*subMenu*/
+    .subMenu{
+        position: absolute;
+        background-color: #f6f3eb;
+        display: none;
+        width: 9%;
+            li a{
+                display: block;
+                color: rgb(54, 54, 54);
+                font-size: 12px;
+                font-family: Roboto, sans-serif;
+                text-decoration: none;
+            }
+    }
+            .navMenu li:hover .subMenu{
+                display: block;
+                padding: 5px;
+            }
+    
 }
+
 
 /*subMenu*/
 .subMenu{
