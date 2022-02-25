@@ -15,21 +15,17 @@ footer {
   padding-bottom: 5px; }
 
 /* media queries */
-@media screen and (min-width: 1024px) {
-  header {
-    width: 100%; } }
+@media screen and (min-width: 340px) {
+  body .grid {
+    display: grid;
+    grid-template-areas: "nav" "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 25% 120% 20%;
+    height: 100vh; } }
 
 @media screen and (min-width: 768px) {
-  header {
-    width: 100%; } }
-
-@media screen and (min-width: 340px) {
-  header {
-    width: 100%; } }
-
-@media screen and (min-width: 340px) {
-  .contenedorLogo .logo {
-    font-size: 50px; } }
+  body .grid {
+    grid-template-rows: 10% 25% 50% 18%; } }
 
 @media screen and (min-width: 1024px) {
   main .mainWrap {
@@ -37,11 +33,29 @@ footer {
 
 @media screen and (min-width: 768px) {
   main .mainWrap {
-    grid-template-columns: 85% 90%; } }
+    grid-template-columns: 50% 75%; } }
 
 @media screen and (min-width: 340px) {
   main .mainWrap {
     grid-template-columns: 50% 40%; } }
+
+@media screen and (min-width: 768px) {
+  .descripcionWrap .tituloMain2 {
+    margin-bottom: 0; } }
+
+.descripcionWrap .imageWrap {
+  align-self: center; }
+
+@media screen and (min-width: 768px) {
+  .descripcionWrap .mainImage {
+    margin: 0;
+    width: 525px;
+    height: 320px; } }
+
+@media screen and (min-width: 768px) {
+  .descripcionWrap .descripcionTexto {
+    font-size: 15px;
+    text-align: center; } }
 
 header {
   display: grid;
@@ -56,6 +70,9 @@ header {
     font-style: normal;
     font-size: 140px;
     color: #000000; }
+    @media screen and (min-width: 340px) {
+      header .contenedorLogo .logo {
+        font-size: 50px; } }
   header .contenedorLogo .sub {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;

@@ -12,6 +12,9 @@ header{
         font-style: normal;
         font-size: 140px;
         color: #000000;
+            @include media-up(sm){
+              font-size: 50px;
+            }
         }
           .contenedorLogo .sub {
           font-family: 'Roboto', sans-serif;

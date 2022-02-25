@@ -16,38 +16,61 @@
         @content;
     }
 }
-
-
-header{
-    @include media-up(lg){
-        width: 100%;
-    }
-    @include media-up(md){
-        width: 100%;
-    }
-    @include media-up(sm){
-        width: 100%;
-    }
-}
-.contenedorLogo{
-    .logo{
-    @include media-up(sm){
-        font-size: 50px;
+body{
+    .grid{
+        @include media-up(sm){
+            display: grid;
+            grid-template-areas:
+                                "nav"
+                                "header"
+                                "main"
+                                "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 10% 25% 120% 20%;
+            height: 100vh;
         }
-    }
+        @include media-up(md){
+            grid-template-rows: 10% 25% 50% 18%;
+        }
+    }   
 }
-
+header{
+    .
+}
 main{
     .mainWrap{
         @include media-up(lg){
             grid-template-columns: 85% 80%;
-
         }
         @include media-up(md){
-            grid-template-columns: 85% 90%; 
+            grid-template-columns: 50% 75%;
         }
         @include media-up(sm){
             grid-template-columns: 50% 40%;
         }
     }
+}
+
+.descripcionWrap{
+    .tituloMain2{
+        @include media-up(md){
+        margin-bottom: 0;
+        }
+    }
+    .imageWrap{
+        align-self: center;
+    }
+    .mainImage{
+        @include media-up(md){ 
+            margin: 0;
+            width: 525px;
+            height: 320px;    
+        }
+    }
+        .descripcionTexto{
+            @include media-up(md){
+                font-size: 15px;
+                text-align: center;
+            }
+        }
 }
