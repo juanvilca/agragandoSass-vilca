@@ -1,3 +1,37 @@
+.gridProductos{
+    display: grid;
+    grid-template-areas:
+                        "nav nav"
+                        "header header"
+                        "main main"
+                        "footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 30% 80% 26%;
+    height: 100vh;
+}
+header{
+    display: grid;
+    grid-area: header;
+    width: 100%;
+    .contenedorProductos {
+        grid-area: header;
+      }
+        .contenedorProductos .logoProductos {
+          font-style: normal;
+          font-size: 100px;
+          color: #000000;
+          }
+            .contenedorProductos .sub {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            text-align: center; 
+            margin-top: 13px;
+          }
+  }
+  
+
+/*
 body{
     background-color: $color-principal;
 }
@@ -12,7 +46,8 @@ body{
         grid-template-rows: 15% 30% 80% 25%;
         height: 100vh;
     }
-/*navbar*/
+
+
 nav{
     display: grid;
     grid-area: nav;
@@ -62,3 +97,5 @@ main{
         padding: 15%;
     }
 }
+
+*/
