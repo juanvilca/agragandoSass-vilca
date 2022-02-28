@@ -13,25 +13,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Nosotros - LivingHome</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.png">
+    <title>Nosotros - LivingHome</title>
 </head>
 
 <body>
-    <div class="gridNosotros">
+    <div class="grid">
         
-            <nav class="navegacion">
-            <ul class="navBar">
-                <li><a>Productos</a>
-                    <ul class="subMenu">
-                        <li><a href="/pages/subMenu/sofa.html">Sofa</a></li>
-                        <li><a href="/pages/subMenu/cama.html">Cama</a></li>
-                    </ul>
-                <li><a href="../index.html"> Home</a></li>
-                </li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav>
+            <div class="navContainer">
+                <label for="menu" class="navLabel">
+                    <img src="/assets/menu.svg" alt="menu desplegable" class="navImg">
+                </label>
+                <input type="checkbox" id="menu" class="navInput">
+                <div class="navMenu">
+                        <li><a class="navItem">Productos</a>
+                            <ul class="subMenu">
+                                <li><a href="/pages/subMenu/sofa.html" class="navItem">Sofa</a></li>
+                                <li><a href="/pages/subMenu/cama.html" class="navItem">Cama</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html" class="navItem">Home</a></li>
+                        <li><a href="/pages/contacto.html" class="navItem">Contacto</a></li>
+                </div>
+            </div>
+
         </nav>
+
         <header>
             <div class="logoNosotros">
                 <h1 class="logo">LivingHome</h1>

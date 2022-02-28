@@ -6,12 +6,3 @@ $navPages: (
 ul li a{
     color: map-get($map: $navPages, $key: color-navPages);
 }
-
-/* media queries */
-
-$breakpoints: (
-    
-    sm : 340px,
-    md : 768px,
-    lg : 1024px,
-);

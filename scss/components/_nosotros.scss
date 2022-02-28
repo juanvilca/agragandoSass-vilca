@@ -1,18 +1,126 @@
-
-.gridNosotros{
+/*navbar*/
+nav{
     display: grid;
-    grid-template-areas:
-                        "nav nav"
-                        "header header"
-                        "main main"
-                        "footer footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 45% 100% 20%;
-    height: 100vh;
-        @include media-up(lg){
-            grid-template-rows: 10% 35% 100% 20%;
+    grid-area: nav;
+    background-color: #f5f0e2;
+    height: 80px;
+    }
+        .navContainer{
+            display: flex;
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .navMenu{
+                display: grid;
+                grid-auto-flow: column;
+                gap: 15em;
+                list-style: none;
+                }
+                .navItem{
+                    font-family: Roboto, sans-serif;
+                    text-decoration: none;
+                    color: black;
+                }
+                    .navLabel, .navInput{
+                        display: none;
+                    }
+
+/*header*/
+header{
+    display: grid;
+    grid-area: header;
+    width: 100%;
+    .contenedorLogo {
+        grid-area: header;
+      }
+        .contenedorLogo .logo {
+          font-style: normal;
+          font-size: 140px;
+          color: #000000;
+          }
+            .contenedorLogo .sub {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            text-align: center; 
+            margin-top: 13px;
+          }
+  }
+
+/*menu desplegable*/
+@media screen and (max-width: 700px){
+
+.navMenu{
+    background-color: rgb(49, 49, 49);
+    position: fixed;
+    top:80px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    }
+        .navInput:checked + .navMenu{
+            clip-path: circle(100% at center);
+        }
+            .navLabel{
+                display: block;
+                cursor: pointer;
+            }
+                .navItem{
+                    color: #e9e9e9;
+                    text-transform: uppercase;
+
+                }
+
+    /*subMenu*/
+    .subMenu{
+        position: absolute;
+        background-color: #f6f3eb;
+        display: none;
+        width: 9%;
+            li a{
+                display: block;
+                color: rgb(54, 54, 54);
+                font-size: 12px;
+                font-family: Roboto, sans-serif;
+                text-decoration: none;
+            }
+    }
+            .navMenu li:hover .subMenu{
+                display: block;
+                padding: 5px;
+            }
+    
+}
+
+
+/*subMenu*/
+.subMenu{
+    position: absolute;
+    background-color: #f6f3eb;
+    display: none;
+    width: 9%;
+        li a{
+            display: block;
+            color: rgb(54, 54, 54);
+            font-size: 12px;
+            font-family: Roboto, sans-serif;
+            text-decoration: none;
         }
 }
+        .navMenu li:hover .subMenu{
+            display: block;
+            padding: 5px;
+        }
+
 
 header{
     .logoNosotros{
@@ -24,26 +132,12 @@ header{
                 text-align: center;
                 font-size: 150px;
                 padding-left: 17%;
-                    @include media-up(lg){
-                        padding-left: 10%;
-                    }
-                    @include media-up(md){
-                        padding-top: 3%;
-                        padding-left: 10%;
-                        font-size: 120px;
-                    }
             }
             .sub{
                 position: absolute;
                 text-align: center;
                 font-size: 18px;
                 padding: 15% 0% 0% 46%;
-                    @include media-up(lg){
-                        padding: 18% 0% 0% 46%;   
-                    }
-                    @include media-up(md){
-                        padding: 30% 0% 0% 46%; 
-                    }
             }
             .titleBackround{
                 position: absolute;
@@ -53,13 +147,7 @@ header{
                 font-size: 15px;
                 padding: 2.5% 10% 0% 9%;
                 color: #2b2b2b;
-                    @include media-up(md){
-                        padding: 1% 10% 0% 9%;
-                    }
             }
-        }
-        @include media-up(lg){
-            width: 100%;
         }
     }
     main{
@@ -72,21 +160,12 @@ header{
                 text-align: center;
                 font-size: 45px;
                 padding-top: 13%;
-                    @include media-up (lg){
-                        font-size: 37px;
-                        padding-top: 6%;
-                    }
-                    @include media-up (md){
-                        font-size: 30px;
-                        padding-top: 6%;
-                    }
             }
         }
         .nosotrosImg{
             float: left;
-            width: 490px;
-            height: 670px;
-            
+            width: 420px;
+            height: 500px;
         }
     }
     
