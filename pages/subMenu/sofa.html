@@ -24,20 +24,27 @@
                 <h1 class="logoProductos">LivingHome</h1>
             </div>
         </header>
-        <nav class="navegacion">
-            <ul class="navBar">
-                <li><a>Productos</a>
-                    <ul class="subMenu">
-                        <li><a href="/pages/subMenu/sofa.html">Sofa</a></li>
-                        <li><a href="/pages/subMenu/cama.html">Cama</a></li>
-                    </ul>
-                </li>
-                <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                <li><a href="/index.html"> Home</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
 
-            </ul>
+        <nav>
+            <div class="navContainer">
+                <label for="menu" class="navLabel">
+                    <img src="/assets/menu.svg" alt="menu desplegable" class="navImg">
+                </label>
+                <input type="checkbox" id="menu" class="navInput">
+                <div class="navMenu">
+                        <li><a class="navItem">Productos</a>
+                            <ul class="subMenu">
+                                <li><a href="/pages/subMenu/sofa.html" class="navItem">Sofa</a></li>
+                                <li><a href="/pages/subMenu/cama.html" class="navItem">Cama</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/nosotros.html" class="navItem">Nosotros</a></li>
+                        <li><a href="/index.html" class="navItem">Home</a></li>
+                        <li><a href="/pages/contacto.html" class="navItem">Contacto</a></li>
+                </div>
+            </div>
         </nav>
+
         <main>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
