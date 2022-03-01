@@ -6,11 +6,32 @@
                         "main"
                         "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 10% 35% 55% 20%;
+    grid-template-rows: 10% 35% 55% 26%;
     height: 100vh;
     background: rgb(73,73,73);
     background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(245,240,226,1) 100%);
 }
+header{
+    display: grid;
+    grid-area: header;
+    width: 100%;
+    .contenedorLogo {
+        grid-area: header;
+      }
+        .contenedorLogo .logo {
+          font-style: normal;
+          font-size: 140px;
+          color: #000000;
+          }
+            .contenedorLogo .sub {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            text-align: center; 
+            margin-right: 23%;
+          }
+  }
+  
 nav{
     grid-area: nav;
     .navBarContacto{

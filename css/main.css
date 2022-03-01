@@ -267,10 +267,27 @@ main {
   display: grid;
   grid-template-areas: "nav " "header" "main" "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 35% 55% 20%;
+  grid-template-rows: 10% 35% 55% 26%;
   height: 100vh;
   background: #494949;
   background: linear-gradient(0deg, #494949 0%, #f5f0e2 100%); }
+
+header {
+  display: grid;
+  grid-area: header;
+  width: 100%; }
+  header .contenedorLogo {
+    grid-area: header; }
+  header .contenedorLogo .logo {
+    font-style: normal;
+    font-size: 140px;
+    color: #000000; }
+  header .contenedorLogo .sub {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-right: 23%; }
 
 nav {
   grid-area: nav; }
